@@ -1,0 +1,133 @@
+// keyframes mixin
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+      @content; 
+    }
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+    @keyframes #{$name} {
+      @content;
+    } 
+}
+
+//animation 
+@mixin animation ($delay, $duration, $animation, $direction, $fillmode, $count, $timing) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: $fillmode;/*none | forwards | backwards | both*/
+    -webkit-animation-direction: $direction;/*normal|alternate*/
+    -webkit-animation-iteration-count: $count;/*number|infinite|initial|inherit*/
+    -webkit-animation-timing-function: $timing;/*linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit*/
+
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: $fillmode;
+    -moz-animation-direction: $direction;
+    -moz-animation-iteration-count: $count;
+    -moz-animation-timing-function: $timing;
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: $fillmode;
+    animation-direction: $direction;
+    animation-iteration-count: $count;
+    animation-timing-function: $timing;
+}
+
+
+
+/**  **/
+@include keyframes(more-detail-btn) {
+  0% {
+      border-width: 0 0 60px 60px;
+  }
+  10% {
+      border-width: 0px 0px 0px 0px;
+  }
+  100% {
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 100%;
+      border-width: 0px 0px 0px 0px;
+  }
+}
+
+@include keyframes(plus-effect-horizontal) {
+  0% {
+      right: 6.4%;
+      bottom: 6.4%;
+      width: 0%;
+  }
+  100% {
+      right: 6.4%;
+      bottom: 6.4%;
+      width: 87.2%;
+      height: 87.2%;
+  }
+}
+
+@include keyframes(plus-effect-straight) {
+  0% {
+      right: 6.4%;
+      bottom: 6.4%;
+      height: 0%;
+  }
+  100% {
+      right: 6.4%;
+      bottom: 6.4%;
+      width: 87.2%;
+      height: 87.2%;
+  }
+}
+
+@include keyframes(quickfadeIn) {
+  0% {
+      opacity: 0.2;
+  }
+  50% {
+      opacity: 1;
+  }
+  100%{
+      opacity: 0.2;
+  }
+}
+@include keyframes(text-shadow-effect) {
+    0% {
+        text-shadow: 0px 0px 4px #FFF;
+    }
+    50% {
+        text-shadow: 0px 0px 12px #FFF;
+    }
+    100%{
+        text-shadow: 0px 0px 4px #FFF;
+    }
+}
+@include keyframes(ripple-effect) {
+    0% {       
+        transform: scale(0.1, 0.1);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+      }
+      50% {
+        opacity: 1;
+        -ms-filter: none;
+        filter: none;
+      }
+      100% {       
+        transform: scale(1.2, 1.2);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+      }
+}
+

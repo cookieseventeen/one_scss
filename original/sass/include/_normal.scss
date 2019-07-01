@@ -1,0 +1,17 @@
+//text-align
+%clearfix {
+    content: "";
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}

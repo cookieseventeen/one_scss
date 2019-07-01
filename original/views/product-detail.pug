@@ -1,0 +1,330 @@
+extends _layouts/page
+
+block head_end
+
+	title title
+	meta(name= "title", content= "")
+	meta(name= "description", content= "")
+	meta(name= "keywords", content= "" )
+
+	// twitter card start
+	meta(property= "twitter:card", content= "summary")
+	meta(property= "twitter:url", content= "//Hosea.com")
+	meta(property= "twitter:title", content= "Hosea")
+	meta(property= "twitter:description", content= "Hosea")
+	meta(property= "twitter:site", content= "Hosea")
+
+	// fb start
+	meta(property= "og:title", content= "Hosea")
+	meta(property= "og:url", content= "//Hosea.com")
+	meta(property= "og:description", content= "Hosea")
+	meta(property= "og:image", content= "images/Hosea.jpg")
+	meta(property= "og:image:type", content="images/Hosea.jpg")
+	meta(property= "og:image:width", content="5000")
+	meta(property= "og:image:height", content="3000")
+
+	//plugin
+
+	script( defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous")
+	link(rel="stylesheet" href="script/swiper/swiper.min.css")
+	link(rel="stylesheet" href="script/PhotoSwipe/dist/photoswipe.css")
+	link(rel="stylesheet" href="script/PhotoSwipe/dist/default-skin/default-skin.css")
+	script(src='script/swiper/swiper.min.js')
+	script(src='script/jquery.sticky-kit.js')
+	script(src='script/PhotoSwipe/dist/photoswipe.min.js')
+	script(src='script/PhotoSwipe/dist/photoswipe-ui-default.min.js')
+	
+
+	//custom css
+	link(rel="stylesheet" href="css/product-detail.css")
+
+block content
+	.banner
+		.banner-images(style="background-image: url('images/product-details/banner.jpg');")
+		//- img(src="images/product-list/product-list-banner.jpg", alt="")
+		.slogan WELCOM TO SUCOOT GROUP
+	.breadcrumbs
+		.container
+			nav(id="breadcrumb" aria-label="breadcrumb")
+				ol.breadcrumb
+					li.breadcrumb-item
+						a(href="#")
+							="首頁"
+					li.breadcrumb-item
+						a(href="#產品介紹 ")
+							="產品介紹"
+					li.breadcrumb-item
+						a(href="#")
+							="鷹架-重型架"
+					li.breadcrumb-item.active
+						a(href="#簡介Overview")
+							="簡介Overview"
+				h2.page-title
+					="PRODUCTS"
+	.content
+		article.detail-page
+			h2.page-title
+				="鷹架 - 重型架Ø60.2"
+			.info-wrapper
+				.container
+					.gallery-wrapper
+						.gallery-info.gallery-content
+							.info-bar
+								.product-name
+									=""
+								.counter
+								.gallery-info-button-prev
+									.fas.fa-chevron-left
+								.gallery-info-button-next
+									.fas.fa-chevron-right
+								.gallery-info-search
+									.fas.fa-search-plus
+									
+							ul.swiper-wrapper.gallery
+								li.swiper-slide
+									a(title="鷹架 - 重型架Ø60.2", href="images/product-details/product-info.jpg", itemprop="contentUrl", data-size="1200x600", data-infomation="鷹架")
+										img(src="images/product-details/product-info.jpg", itemprop="thumbnail", alt="Image description1")
+									figcaption(itemprop="caption description")
+										="鷹架 - 重型架Ø60.2-1"
+
+								li.swiper-slide
+									a(title="鷹架 - 重型架Ø60.2-2", href="images/product-details/product-info-2.jpg", itemprop="contentUrl", data-size="1200x600", data-infomation="鷹架")
+										img(src="images/product-details/product-info-2.jpg", itemprop="thumbnail", alt="Image description")
+									figcaption(itemprop="caption description")
+										="鷹架 - 重型架Ø60.2-2"
+								li.swiper-slide
+									a(title="鷹架 - 重型架Ø60.2-3", href="images/product-details/product-info-3.jpg", itemprop="contentUrl", data-size="1200x600", data-infomation="鷹架")
+										img(src="images/product-details/product-info-3.jpg", itemprop="thumbnail", alt="Image description")
+									figcaption(itemprop="caption description")
+										="鷹架 - 重型架Ø60.2-3"
+								li.swiper-slide
+									a(title="鷹架 - 重型架Ø60.2-4", href="images/product-details/product-info-4.jpg", itemprop="contentUrl", data-size="1200x600", data-infomation="鷹架")
+										img(src="images/product-details/product-info-4.jpg", itemprop="thumbnail", alt="Image description")
+									figcaption(itemprop="caption description")
+										="鷹架 - 重型架Ø60.2-4"
+								li.swiper-slide
+									a(title="鷹架 - 重型架Ø60.2-5", href="images/product-details/product-info-5.jpg" itemprop="contentUrl", data-size="1200x600", data-infomation="鷹架")
+										img(src="images/product-details/product-info-5.jpg", itemprop="thumbnail", alt="Image description")
+									figcaption(itemprop="caption description")
+										="鷹架 - 重型架Ø60.2-5"
+							
+							
+						.gallery-video.gallery-content
+							.info-bar
+								.product-name
+									="鷹架 - 重型架Ø60.2"
+								.counter
+								.gallery-info-button-prev
+									.fas.fa-chevron-left
+								.gallery-info-button-next
+									.fas.fa-chevron-right
+								.gallery-info-search
+									.fas.fa-search-plus
+
+							ul.swiper-wrapper.video-gallery
+								li.swiper-slide
+									a(title="鷹架 - 重型架Ø60.2", href="images/product-details/product-video.jpg", itemprop="contentUrl", data-size="1200x600" , data-type="video", data-video-content="<div class=\"video-wrapper\"><div class=\"video-content\"><video width=\"960\" class=\"pswp__video\" src=\"video\/sucoot_video.mp4\" controls></video></div></div>")
+										img(src="images/product-details/product-video.jpg", itemprop="thumbnail", alt="Image description1")
+									figcaption(itemprop="caption description")
+										="鷹架 - 重型架Ø60.2-1"
+						
+						a.btn-ctr.pic.active(href="#pic") 圖片
+						a.btn-ctr.video(href="#video") 影片
+			.text-info
+				.container
+					.tab-list.clearfix
+						.tab-list-inner.active
+							a(href="#簡介OVERVIEW")
+								="簡介Overview"
+						.tab-list-inner
+							a(href="#工程數據 TECHNICAL DETAILS")
+								="工程數據 Technical Details"
+						.tab-list-inner
+							a(href="#支撐道具")
+								="支撐道具"
+						.tab-list-inner
+							a(href="#系統")
+								="系統"
+					.tab-content
+						.tab-inner
+							="簡介Overview----φ 60.2mm System –重點特色主架之續接裕度在1.8mm之下經研究測試最大裕度1.8mm時，承載強度為原來的94%以上;若它牌產品裕度為3.0mm時，強度為原來的50%。臨時支撐架為多層續接結構，強度折減會隨著續接數量增加而倍增。"
+						.tab-inner
+							="工程數據 Technical Details----φ 60.2mm System –重點特色主架之續接裕度在1.8mm之下經研究測試最大裕度1.8mm時，承載強度為原來的94%以上;若它牌產品裕度為3.0mm時，強度為原來的50%。臨時支撐架為多層續接結構，強度折減會隨著續接數量增加而倍增。"
+						.tab-inner
+							="支撐道具----φ 60.2mm System –重點特色主架之續接裕度在1.8mm之下經研究測試最大裕度1.8mm時，承載強度為原來的94%以上;若它牌產品裕度為3.0mm時，強度為原來的50%。臨時支撐架為多層續接結構，強度折減會隨著續接數量增加而倍增。"
+						.tab-inner
+							="系統----φ 60.2mm System –重點特色主架之續接裕度在1.8mm之下經研究測試最大裕度1.8mm時，承載強度為原來的94%以上;若它牌產品裕度為3.0mm時，強度為原來的50%。臨時支撐架為多層續接結構，強度折減會隨著續接數量增加而倍增。"
+
+			
+			.related
+				h3.sub-title
+					="相關案例"
+					span
+						="APPLICATION"
+				.related-container
+					.swiper-wrapper
+						.swiper-slide
+							a.pic-info(href="#")
+								img(src="images/product-details/application-1.jpg", alt="")
+								.overlay
+									.text
+										="類型: 上構支撐"
+										br
+										="世界第四大機場航站"
+							a.title(href="#title")
+								span
+									i.fas.fa-caret-right
+									="案件:中國重慶清溪橋 (29公尺)"
+						.swiper-slide
+							a.pic-info(href="#")
+								img(src="images/product-details/application-2.jpg", alt="")
+								.overlay
+									.text
+										="類型: 上構支撐"
+										br
+										="世界第四大機場航站"
+							a.title(href="#title")
+								span
+									i.fas.fa-caret-right
+									="案件: 泰國國際機場"
+						.swiper-slide
+							a.pic-info(href="#")
+								img(src="images/product-details/application-3.jpg", alt="")
+								.overlay
+									.text
+										="類型: 上構支撐"
+										br
+										="世界第四大機場航站"
+							a.title(href="#title")
+								span
+									i.fas.fa-caret-right
+									="案件: 台灣, 橋梁/ 高速鐵路/ 快速道路"
+						.swiper-slide
+							a.pic-info(href="#")
+								img(src="images/product-details/application-4.jpg", alt="")
+								.overlay
+									.text
+										="類型: 上構支撐"
+										br
+										="世界第四大機場航站"
+							a.title(href="#title")
+								span
+									i.fas.fa-caret-right
+									="案件: 台灣, 橋梁"
+						.swiper-slide
+							a.pic-info(href="#")
+								img(src="images/product-details/application-5.jpg", alt="")
+								.overlay
+									.text
+										="類型: 上構支撐"
+										br
+										="世界第四大機場航站"
+							a.title(href="#title")
+								span
+									i.fas.fa-caret-right
+									="案件: 台灣, 橋梁"
+						.swiper-slide
+							a.pic-info(href="#")
+								img(src="images/product-details/application-1.jpg", alt="")
+								.overlay
+									.text
+										="類型: 上構支撐"
+										br
+										="世界第四大機場航站"
+							a.title(href="#title")
+								span
+									i.fas.fa-caret-right
+									="案件:中國重慶清溪橋 (29公尺)"
+						.swiper-slide
+							a.pic-info(href="#")
+								img(src="images/product-details/application-2.jpg", alt="")
+								.overlay
+									.text
+										="類型: 上構支撐"
+										br
+										="世界第四大機場航站"
+							a.title(href="#title")
+								span
+									i.fas.fa-caret-right
+									="案件: 泰國國際機場"
+						.swiper-slide
+							a.pic-info(href="#")
+								img(src="images/product-details/application-3.jpg", alt="")
+								.overlay
+									.text
+										="類型: 上構支撐"
+										br
+										="世界第四大機場航站"
+							a.title(href="#title")
+								span
+									i.fas.fa-caret-right
+									="案件: 台灣, 橋梁/ 高速鐵路/ 快速道路"
+						.swiper-slide
+							a.pic-info(href="#")
+								img(src="images/product-details/application-4.jpg", alt="")
+								.overlay
+									.text
+										="類型: 上構支撐"
+										br
+										="世界第四大機場航站"
+							a.title(href="#title")
+								span
+									i.fas.fa-caret-right
+									="案件: 台灣, 橋梁"
+						.swiper-slide
+							a.pic-info(href="#")
+								img(src="images/product-details/application-5.jpg", alt="")
+								.overlay
+									.text
+										="類型: 上構支撐"
+										br
+										="世界第四大機場航站"
+							a.title(href="#title")
+								span
+									i.fas.fa-caret-right
+									="案件: 台灣, 橋梁"
+					.swiper-button-prev-wrapper
+						.swiper-button-prev
+							.fas.fa-chevron-left
+					.swiper-button-next-wrapper
+						.swiper-button-next
+							.fas.fa-chevron-right
+
+
+
+
+				
+	.pswp(tabindex="-1", role="dialog", aria-hidden="true")
+		.pswp__bg
+		.pswp__scroll-wrap
+			.pswp__container
+				.pswp__item
+				.pswp__item
+				.pswp__item
+			
+			.pswp__ui.pswp__ui--hidden
+				.pswp__top-bar
+					.pswp__counter
+					botton.pswp__button.pswp__button--close(title="Close (Esc)")
+					botton.pswp__button.pswp__button--share(title="Share")
+					botton.pswp__button.pswp__button--fs(title="Toggle fullscreen")
+					botton.pswp__button.pswp__button--zoom(title="Zoom in/out")
+					.pswp__preloader
+						.pswp__preloader__icn
+							.pswp__preloader__cut
+								.pswp__preloader__donut
+				.pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+					.pswp__share-tooltip
+				botton.pswp__button.pswp__button--arrow--left(title="Previous (arrow left)")
+				botton.pswp__button.pswp__button--arrow--right(title="Previous (arrow right)")
+				.pswp__caption
+					.pswp__caption__center
+				
+
+
+					
+block body_end
+
+	//custom js
+	script(src='script/product-detail.js')
+	

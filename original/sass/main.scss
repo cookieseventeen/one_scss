@@ -1,0 +1,48 @@
+@import "base";
+@import "hamburgers/hamburgers"; // mixin animation 參考
+@import "include/normal"; // 常用基本的css 
+@import "bootstrap";
+@import "include/animation"; // mixin animation 參考
+
+body {
+    font-family: $default-font-family;
+    color: $main-color;
+}
+
+img {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto\9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $default-font-family;
+}
+
+h2 {
+    word-break: break-all;
+}
+
+a {
+    &:hover {
+        text-decoration: none !important;
+        outline: none !important;
+    }
+
+    &:focus {
+        text-decoration: none !important;
+        outline: none !important;
+    }
+
+    &:hover:focus {
+        text-decoration: none !important;
+        outline: none !important;
+    }
+}

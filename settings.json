@@ -6,19 +6,20 @@
       {
         "format": "expanded", //expanded不壓縮
         "extensionName": ".css", //附檔名
-        // "savePath": "~/../../css", //存檔路徑 original
-        // "savePath": "~../css", //存檔路徑 套版例如brilong
-        "savePath": "~../css/css", //存檔路徑 同目錄
+        // "savePath": "~../css", //存檔路徑 "sass檔案夾"跟 css 在同一層目錄
+        // "savePath": "~", //存檔路徑 "sass檔案"同一層目錄
+        "savePath": "~../css", //存檔路徑 同目錄
       },
       // min css 設定
       {
         "format": "compressed", //壓縮
         "extensionName": ".min.css", //附檔名
-        // "savePath": "~/../../css", //存檔路徑 original
-        // "savePath": "~../css", //存檔路徑 套版例如brilong
+        // "savePath": "~../css", //存檔路徑 "sass檔案夾"跟 css 在同一層目錄
+        // "savePath": "~", //存檔路徑 "sass檔案"同一層目錄
         "savePath": "~../css", //存檔路徑 同目錄
       }
     ],
     "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]//前綴版本 暫時用預設的,有特殊版本在修改
 }
 
+ 

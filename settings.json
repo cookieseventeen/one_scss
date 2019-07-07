@@ -1,35 +1,24 @@
 {
-    "terminal.integrated.shellArgs.windows": ["C:\\Windows\\System32\\cmd.exe /k nodevars.bat"],
-    "emmet.triggerExpansionOnTab": true,
-    "window.zoomLevel": 0,
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
+    //只要增加下列設定就好 
     "liveServer.settings.port": 8080, //設定liveserver port
     "liveSassCompile.settings.formats": [
-      // {
-      //   "format": "expanded", //正常寫法
-      //   "extensionName": ".css", //附檔名
-      //   "savePath": "~/../css", //存檔路徑
-      // },
-      // 平常設定
+      // 一般css平常設定
       {
-        "format": "expanded", //壓縮
+        "format": "expanded", //expanded不壓縮
         "extensionName": ".css", //附檔名
         // "savePath": "~/../../css", //存檔路徑 original
         // "savePath": "~../css", //存檔路徑 套版例如brilong
-        "savePath": "~css", //存檔路徑 同目錄
+        "savePath": "~../css/css", //存檔路徑 同目錄
       },
+      // min css 設定
       {
         "format": "compressed", //壓縮
         "extensionName": ".min.css", //附檔名
         // "savePath": "~/../../css", //存檔路徑 original
         // "savePath": "~../css", //存檔路徑 套版例如brilong
-        "savePath": "~", //存檔路徑 同目錄
+        "savePath": "~../css", //存檔路徑 同目錄
       }
     ],
-    "[javascript]": {
-      "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+    "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]//前綴版本 暫時用預設的,有特殊版本在修改
 }
 

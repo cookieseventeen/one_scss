@@ -1,6 +1,6 @@
 /*global require*/
 "use strict";
-
+/*npm install gulp@3.9.1 gulp-sass path gulp-data gulp-pug gulp-autoprefixer gulp-sass-glob browser-sync -save-dev*/
 var gulp = require('gulp'),
   path = require('path'),
   data = require('gulp-data'),
@@ -10,7 +10,6 @@ var gulp = require('gulp'),
   sassGlob = require('gulp-sass-glob'),
   browserSync = require('browser-sync'),
   sourcemaps = require('gulp-sourcemaps');
-
 /*
  * Directories here
  */
